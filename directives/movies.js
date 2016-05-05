@@ -1,2 +1,7 @@
 angular.module("movieApp")
-.directive("moviePostDirective", [])
+.directive("movieDirective", function() {
+
+  return {
+    templateUrl: "./partials/movies.html"    
+  }
+})
