@@ -1,1 +1,1 @@
-angular.module('movieApp', ['ngRouter'])
+angular.module('movieApp', ['ngRoute'])

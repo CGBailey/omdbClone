@@ -1,10 +1,24 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img alt="Brand" src="...">
-        <h1>Search movies with OMDB</h1>
-      </a>
+<div class="container" ng-controller="MainController">
+{{view.search}}
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <h1>Search movies with OMDB</h1>
+        </a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="searchBar" placeholder="search movies here" ng-model="view.search">
+      </div>
+
+      <!-- <a> -->
+        <button class="btn btn-info" ng-click="changeLocation(view.search)">Search</button>
+      <!-- </a> -->
+    </div>
+  </form>
+
+</div>

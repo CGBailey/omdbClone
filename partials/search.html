@@ -1,10 +1,9 @@
-<div class="container">
-  <label for="search" class="col-sm-2 control-label">Search a Movie</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="search" placeholder="Email">
+<h1> SEARCH !!!!!!</h1>
+<div class="container" ng-controller="SearchController">
+  <div ng-repeat="movie in view.movies">
+    <div class="well">
+      <p class="text-left"><a ng-href='/movies/{{movie.imbdID}}'>{{movie.Title}}</a></p>
+      <p class="text-left">{{movie.Year}}</p>
     </div>
   </div>
-  <p>
-  <button type="button" class="btn btn-primary btn-lg">Saerch <a href=""></a></button>
-</p>
 </div>
