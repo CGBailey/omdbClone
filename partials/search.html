@@ -2,7 +2,7 @@
 <div class="container" ng-controller="SearchController">
   <div ng-repeat="movie in view.movies">
     <div class="well">
-      <p class="text-left"><a ng-href='/movies/{{movie.imbdID}}'>{{movie.Title}}</a></p>
+    <a class="text-left" ng-click="view.singleMovie(movie.imdbID)">{{movie.Title}}</a>
       <p class="text-left">{{movie.Year}}</p>
     </div>
   </div>

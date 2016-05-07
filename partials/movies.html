@@ -1,9 +1,17 @@
-<div class="container" ng-conroller="MovieController">
+<div class="container" ng-controller="MovieController">
   <div class="well">
-    <img src="{{}}" class="img-thumbnail">
-    <p class="text-right">{{movie.title}}</p>
-    <p class="text-right">{{movie.year}}</p>
-    <p class="text-right">{{movie.plot}}</p>
-    <p class="text-right">{{movie.imbdRating}}</p>
+    <img ng-src="{{view.movie.poster}}" class="img-thumbnail">
+    <div class="row">
+      <p class="text-right">{{view.movie.title}}</p>
+    </div>
+    <div class="row">
+      <p class="text-right">{{view.movie.year}}</p>
+    </div>
+    <div class="row">
+      <p class="text-right">{{view.movie.plot}}</p>
+    </div>
+    <div class="row">
+      <p class="text-right">{{view.movie.imdbRating}}</p>
+    </div>
   </div>
 </div>
